@@ -12,9 +12,8 @@ readme = open('README.rst').read()
 history = open('HISTORY.rst').read().replace('.. :changelog:', '')
 
 requirements = [
-]
-
-test_requirements = [
+    'python-dateutil>=2.2,<2.3',
+    'nltk>=3.0.0'
 ]
 
 setup(
@@ -48,5 +47,4 @@ setup(
         'Programming Language :: Python :: 3.4',
     ],
     test_suite='tests',
-    tests_require=test_requirements
 )
